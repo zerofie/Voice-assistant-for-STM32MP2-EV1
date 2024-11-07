@@ -59,7 +59,11 @@ Here is a combined command to install all the necessary dependencies on an Ubunt
 
 sh
 sudo apt-get update
+
 sudo apt-get install -y portaudio19-dev
+
 pip install sounddevice scipy speechrecognition pyttsx3 wavio soundfile rapidfuzz vosk pyaudio
+
 wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+
 unzip vosk-model-small-en-us-0.15.zip -d /mnt_mmc/vosk_model/
