@@ -1,6 +1,8 @@
 # Voice-assistant-for-MPU
 
 An application in Python to run the built-in applications in the ST x-linux-ai distribution package and basic commands or existing applications handsfree via voice command. Audio drivers need to be enabled for the stm32mp2157f board. This application can be built for practically any MPU. Multithreading and subprocesses are implemented for running applications in parallel and running the same applications multiple times in parallel. Daemon is used to continuously listen, wake-up command, and stop listening command implemented. Till the stop command is triggered, continuous input is taken for any commands or their aliases present in the dictionary `commands.py`. Initially, I have used Google Speech-to-Text; the audio is stored in WAV files. Each string recorded is cross-checked and matched with the supported commands, their intent (start or stop), or their aliases. Each time a new command is detected, a process opens in parallel to the already running applications. The kill command followed by the application name kills all the threads with the existing command name.
+I have developed it for both ofline and online operations,
+offline using VOSK model and online using Google_speech_to_text
 
 ## Dependencies
 
