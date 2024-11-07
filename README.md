@@ -10,9 +10,9 @@ Each time a new command is detected a process opens parallelly to the already ru
 
 Here is a comprehensive list of all the dependencies required to run the provided code, including the necessary packages to be installed and the language/plugin support with their installation syntaxes.
 
-Dependencies
-Python Packages
-sounddevice: For audio recording.
+Dependencies : 
+Python Packages-->
+sounddevice: For audio recording
 scipy: For handling scientific computations and reading/writing WAV files.
 speech_recognition: For recognizing speech input.
 pyttsx3: For text-to-speech conversion.
@@ -23,9 +23,11 @@ rapidfuzz: For fuzzy string matching.
 vosk: For offline speech recognition.
 pyaudio: For handling audio streams.
 threading: For running tasks in parallel.
+
 Additional Tools
 Vosk Model: Pre-trained model for Vosk speech recognition.
 sudo: For executing system commands with superuser privileges (if needed).
+
 Installation Instructions
 Python Packages
 You can install all the required Python packages using pip. Here is the collective command to install all the packages:
@@ -42,7 +44,6 @@ System Dependencies
 Ensure that you have the following system dependencies installed:
 
 PortAudio: Required for PyAudio. You can install it using your package manager.
-
 On Ubuntu/Debian:
 sh
 sudo apt-get install portaudio19-dev
@@ -57,13 +58,10 @@ Ensure that your audio input device (e.g., microphone) is properly configured an
 Example Command to Install All Dependencies
 Here is a combined command to install all the necessary dependencies on an Ubuntu/Debian system:
 
+
 sh
 sudo apt-get update
-
 sudo apt-get install -y portaudio19-dev
-
 pip install sounddevice scipy speechrecognition pyttsx3 wavio soundfile rapidfuzz vosk pyaudio
-
 wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
-
 unzip vosk-model-small-en-us-0.15.zip -d /mnt_mmc/vosk_model/
